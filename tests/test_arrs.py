@@ -12,6 +12,7 @@ class TestArrs(unittest.TestCase):
         self.assertEqual(arrs.my_slice([1, 2, 3, 4], 1, 3), [2, 3])
         self.assertEqual(arrs.my_slice([1, 2, 3], 1), [2, 3])
 
+        self.assertEqual(arrs.my_slice([6, 7, 8, 9], -2), [8, 9])
+        self.assertEqual(arrs.my_slice([6, 7, 8, 9], -17), [6, 7, 8, 9])
+        self.assertEqual(arrs.my_slice([]), [])
 
-if __name__ == '__main__':
-    unittest.main()
